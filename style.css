@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #dff6f0, #f4f6f9);
+  margin: 0;
+  padding: 40px 20px;
+  min-height: 100vh;
+  overflow-y: auto; /* ✅ permite rolagem */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* ✅ começa do topo */
+}
+
+.container {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 600;
+  color: #444;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  margin-top: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+button {
+  margin-top: 22px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+  width: 100%;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.03);
+}
+
+#resultado {
+  margin-top: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e7d32;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Estilo para alerta de consumo alto */
+.alerta {
+  background: #fdecea;
+  color: #d32f2f;
+  border: 1px solid #f5c2c0;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+}

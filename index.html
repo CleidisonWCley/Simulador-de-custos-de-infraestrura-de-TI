@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Custos de TI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💻 Simulador de Custos de Infraestrutura de TI</h1>
+
+    <label for="servidores">Número de servidores:</label>
+    <input type="number" id="servidores" placeholder="Ex: 10">
+
+    <label for="custoKwh">Custo de energia (R$) por kWh:</label>
+    <input type="number" id="custoKwh" step="0.01" placeholder="Ex: 0.80">
+
+    <label for="consumo">Consumo médio mensal por servidor (kWh):</label>
+    <input type="number" id="consumo" placeholder="Ex: 150">
+
+    <label for="limite">Definir limite de consumo alto (kWh):</label>
+    <input type="number" id="limite" placeholder="Ex: 2000">
+
+    <button onclick="calcular()">Calcular Custo Mensal</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
